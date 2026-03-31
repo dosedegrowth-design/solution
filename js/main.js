@@ -34,43 +34,73 @@ if (header) {
 })();
 
 /* =====================
-   HAMBURGER MENU — SIDEBAR
+   HAMBURGER MENU — SIDEBAR (built via JS, outside header)
    ===================== */
 const hamburger = document.getElementById('hamburger');
-const nav = document.getElementById('nav');
-if (hamburger && nav) {
-  // Criar overlay
+const navOriginal = document.getElementById('nav');
+if (hamburger && navOriginal && window.innerWidth <= 768) {
+  // Build sidebar HTML from original nav links
+  const links = [];
+  navOriginal.querySelectorAll(':scope > a, :scope > .nav-dropdown').forEach(el => {
+    if (el.classList.contains('nav-dropdown')) {
+      const title = el.querySelector('.nav-link');
+      if (title) links.push({type:'title', text: title.textContent.replace('▾','').trim()});
+      el.querySelectorAll('.dropdown-menu a').forEach(a => {
+        links.push({type:'sub', text: a.textContent, href: a.getAttribute('href')});
+      });
+    } else {
+      links.push({type:'main', text: el.textContent, href: el.getAttribute('href')});
+    }
+  });
+
+  let linksHTML = '';
+  links.forEach(l => {
+    if (l.type === 'title') {
+      linksHTML += `<div class="mobile-sidebar-title">${l.text}</div>`;
+    } else if (l.type === 'sub') {
+      linksHTML += `<a href="${l.href}" class="mobile-sidebar-sub">${l.text}</a>`;
+    } else {
+      linksHTML += `<a href="${l.href}" class="mobile-sidebar-link">${l.text}</a>`;
+    }
+  });
+
+  // Sidebar CTA
+  linksHTML += `<div class="mobile-sidebar-cta">
+    <a href="https://wa.me/5511987282370?text=Olá!%20Preciso%20de%20um%20orçamento." target="_blank" class="btn btn-wpp" style="width:100%;justify-content:center;padding:14px;font-size:0.95rem;">📱 WhatsApp</a>
+    <a href="tel:1123641035" style="display:block;text-align:center;padding:10px;color:var(--gray-600);font-weight:600;font-size:0.9rem;">📞 (11) 2364-1035</a>
+  </div>`;
+
+  // Create overlay
   const overlay = document.createElement('div');
-  overlay.className = 'nav-overlay';
+  overlay.id = 'mobile-overlay';
   document.body.appendChild(overlay);
 
+  // Create sidebar
+  const sidebar = document.createElement('div');
+  sidebar.id = 'mobile-sidebar';
+  sidebar.innerHTML = `<div class="mobile-sidebar-header"><span>Menu</span><button id="mobile-sidebar-close" aria-label="Fechar">✕</button></div>${linksHTML}`;
+  document.body.appendChild(sidebar);
+
+  const closeBtn = document.getElementById('mobile-sidebar-close');
+
   function openMenu() {
-    nav.classList.add('open');
-    overlay.classList.add('active');
+    sidebar.classList.add('open');
+    overlay.classList.add('open');
     hamburger.classList.add('active');
     document.body.style.overflow = 'hidden';
   }
   function closeMenu() {
-    nav.classList.remove('open');
-    overlay.classList.remove('active');
+    sidebar.classList.remove('open');
+    overlay.classList.remove('open');
     hamburger.classList.remove('active');
     document.body.style.overflow = '';
   }
 
-  hamburger.addEventListener('click', () => {
-    if (nav.classList.contains('open')) closeMenu();
-    else openMenu();
-  });
-
+  hamburger.addEventListener('click', () => sidebar.classList.contains('open') ? closeMenu() : openMenu());
   overlay.addEventListener('click', closeMenu);
-
-  nav.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', closeMenu);
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeMenu();
-  });
+  closeBtn.addEventListener('click', closeMenu);
+  sidebar.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
 }
 
 /* =====================
