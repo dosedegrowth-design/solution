@@ -1205,7 +1205,7 @@ ul { list-style: none; }
   /* GLOBAL MOBILE OVERFLOW FIX */
   .btn { white-space: normal; word-break: break-word; }
   .hero-bg, .hero::before, .hero::after, .cta-final::before { display: none !important; }
-  .topbar, .header, .hero, .stats-bar, .emergency-strip, .services,
+  .topbar, .hero, .stats-bar, .emergency-strip, .services,
   .how-works, .why-us, .testimonials, .areas, .cta-final, .footer,
   .service-page-hero, .service-page-content, .related-services { overflow-x: clip; }
 
