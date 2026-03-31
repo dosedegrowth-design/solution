@@ -34,20 +34,42 @@ if (header) {
 })();
 
 /* =====================
-   HAMBURGER MENU
+   HAMBURGER MENU — SIDEBAR
    ===================== */
 const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('nav');
 if (hamburger && nav) {
+  // Criar overlay
+  const overlay = document.createElement('div');
+  overlay.className = 'nav-overlay';
+  document.body.appendChild(overlay);
+
+  function openMenu() {
+    nav.classList.add('open');
+    overlay.classList.add('active');
+    hamburger.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMenu() {
+    nav.classList.remove('open');
+    overlay.classList.remove('active');
+    hamburger.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
   hamburger.addEventListener('click', () => {
-    nav.classList.toggle('open');
-    hamburger.classList.toggle('active');
+    if (nav.classList.contains('open')) closeMenu();
+    else openMenu();
   });
+
+  overlay.addEventListener('click', closeMenu);
+
   nav.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('open');
-      hamburger.classList.remove('active');
-    });
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMenu();
   });
 }
 
