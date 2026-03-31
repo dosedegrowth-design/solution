@@ -1199,15 +1199,16 @@ ul { list-style: none; }
   .header-cta { display: none; }
 
   /* HERO MOBILE */
-  .hero { padding: 40px 0 0; min-height: auto; }
-  .hero-inner { text-align: center; }
+  .hero { padding: 40px 0 0; min-height: auto; overflow: visible; }
+  .hero-inner { grid-template-columns: 1fr !important; text-align: center; gap: 24px; }
+  .hero-content { display: flex; flex-direction: column; align-items: center; }
   .hero-title { font-size: 2rem; }
-  .hero-subtitle { text-align: center; margin-left: auto; margin-right: auto; }
+  .hero-subtitle { text-align: center; max-width: 100%; margin-left: auto; margin-right: auto; }
   .hero-badges { justify-content: center; }
-  .hero-ctas { flex-direction: column; width: 100%; align-items: center; }
-  .hero-ctas .btn { width: 100%; justify-content: center; }
+  .hero-ctas { flex-direction: column; width: 100%; align-items: stretch; }
+  .hero-ctas .btn { width: 100%; justify-content: center; box-sizing: border-box; }
   .hero-form-wrap { display: block; padding: 24px 0 0; }
-  .hero-form-card { padding: 24px 20px; }
+  .hero-form-card { padding: 24px 16px; }
   .hero-wave { height: 40px; margin-top: 24px; }
 
   /* STATS MOBILE */
@@ -1242,10 +1243,11 @@ ul { list-style: none; }
 
   /* CTA FINAL MOBILE */
   .cta-final { padding: 56px 0; }
-  .cta-final-inner { grid-template-columns: 1fr; gap: 32px; text-align: center; }
+  .cta-final-inner { grid-template-columns: 1fr !important; gap: 32px; text-align: center; }
   .cta-final-content { display: flex; flex-direction: column; align-items: center; }
-  .cta-final-btns { flex-direction: column; width: 100%; }
-  .cta-final-btns .btn { width: 100%; justify-content: center; }
+  .cta-final-content p { max-width: 100%; }
+  .cta-final-btns { flex-direction: column; width: 100%; align-items: stretch; }
+  .cta-final-btns .btn { width: 100%; justify-content: center; box-sizing: border-box; }
   .cert-list { flex-direction: row; flex-wrap: wrap; justify-content: center; }
 
   /* FOOTER MOBILE */
@@ -1264,13 +1266,14 @@ ul { list-style: none; }
 
   /* SERVICE PAGES MOBILE */
   .service-page-hero { padding: 40px 0; }
-  .service-page-hero-inner { grid-template-columns: 1fr; text-align: center; }
+  .service-page-hero-inner { grid-template-columns: 1fr !important; text-align: center; }
   .service-page-hero-content { display: flex; flex-direction: column; align-items: center; }
+  .service-page-hero p { max-width: 100%; }
   .service-urgency-bar { font-size: 0.75rem; }
   .service-page-hero h1 { font-size: 1.8rem; }
   .service-page-hero .hero-badges { justify-content: center; }
-  .service-hero-ctas { flex-direction: column; width: 100%; align-items: center; }
-  .service-hero-ctas .btn { width: 100%; justify-content: center; }
+  .service-hero-ctas { flex-direction: column; width: 100%; align-items: stretch; }
+  .service-hero-ctas .btn { width: 100%; justify-content: center; box-sizing: border-box; }
   .service-hero-img { display: none; }
   .service-content-grid { grid-template-columns: 1fr; }
   .service-sidebar { position: static; }
