@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /Imagens /
+
+Sitemap: https://solutiondesentupidora.com.br/sitemap.xml
