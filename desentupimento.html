@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desentupimento em São Paulo 24h | Solution Desentupidora</title>
+  <meta name="description" content="Desentupimento 24h em São Paulo. Esgoto, vaso sanitário, pia, ralo, grelhas e calhas. Chegamos em 40 min, sem taxa de visita, garantia no serviço. (11) 2364-1035." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Barlow+Condensed:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="canonical" href="https://solutiondesentupidora.com.br/desentupimento/" />
+  <style>
+    /* SERVICE TABS */
+    .service-tabs { background:#fff; border-bottom:2px solid var(--gray-200); position:sticky; top:72px; z-index:100; }
+    .service-tabs-inner { display:flex; gap:0; overflow-x:auto; scrollbar-width:none; }
+    .service-tabs-inner::-webkit-scrollbar { display:none; }
+    .tab-btn { flex-shrink:0; padding:16px 24px; font-size:.875rem; font-weight:600; color:var(--gray-600); border:none; background:none; cursor:pointer; border-bottom:3px solid transparent; transition:all .2s; white-space:nowrap; }
+    .tab-btn.active { color:var(--blue-mid); border-bottom-color:var(--blue-mid); }
+    .tab-btn:hover { color:var(--blue-mid); background:var(--gray-50); }
+    .tab-btn span { margin-right:6px; }
+
+    /* SERVICE SECTIONS */
+    .service-section { display:none; }
+    .service-section.active { display:block; }
+
+    /* SEGMENT CARDS */
+    .segment-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:16px; margin-bottom:32px; }
+    .segment-card { background:var(--gray-50); border:1px solid var(--gray-200); border-radius:var(--radius); padding:24px; }
+    .segment-card h3 { font-size:1rem; font-weight:700; margin-bottom:12px; }
+    .segment-card ul { display:flex; flex-direction:column; gap:6px; }
+    .segment-card li { font-size:.875rem; color:var(--gray-600); }
+    .segment-card li::before { content:"✓ "; color:var(--green-dark); font-weight:700; }
+
+    /* REVIEWS GRID */
+    .review-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin-top:16px; }
+    .review-item { background:var(--gray-50); border:1px solid var(--gray-200); border-radius:var(--radius); padding:20px; }
+    .review-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; flex-wrap:wrap; gap:8px; }
+    .review-name { font-weight:700; font-size:.875rem; color:var(--gray-800); }
+    .review-stars { color:#f59e0b; font-size:1rem; }
+    .review-item p { font-size:.875rem; color:var(--gray-600); font-style:italic; line-height:1.6; margin-bottom:8px; }
+    .review-source { font-size:.75rem; color:var(--gray-400); }
+
+    /* TAB HERO */
+    .tab-hero { background:linear-gradient(135deg,var(--blue-dark) 0%,var(--blue) 100%); padding:40px 0 32px; color:#fff; }
+    .tab-hero h2 { font-size:2rem; font-weight:900; margin-bottom:12px; }
+    .tab-hero p { font-size:1.05rem; opacity:.9; max-width:600px; margin-bottom:24px; }
+    .tab-hero-ctas { display:flex; gap:12px; flex-wrap:wrap; }
+    @media(max-width:640px){ .tab-hero h2{ font-size:1.5rem; } .service-tabs-inner{ gap:0; } .tab-btn{ padding:12px 16px; font-size:.8rem; } }
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container topbar-inner"><div class="topbar-left"><span>⏰ Atendimento 24h, 7 dias por semana</span><span class="sep">|</span><span>📍 São Paulo e Grande SP</span></div><div class="topbar-right"><a href="tel:1123641035" class="topbar-phone">📞 (11) 2364-1035</a><a href="tel:11987282370" class="topbar-phone">📞 (11) 98728-2370</a></div></div></div>
+  <header class="header" id="header"><div class="container header-inner">
+    <a href="index.html" class="logo"><img src="logo/logo.png" alt="Solution Desentupidora e Detetizadora" /></a>
+    <nav class="nav" id="nav"><a href="index.html" class="nav-link">Home</a><div class="nav-dropdown"><a href="#" class="nav-link active">Serviços ▾</a><div class="dropdown-menu">
+      <a href="desentupimento.html">🚿 Desentupimento</a>
+      <a href="hidrojateamento.html">💧 Hidrojateamento</a>
+      <a href="limpeza-de-caixa-de-gordura.html">🏭 Caixa de Gordura</a>
+      <a href="limpeza-de-fossa.html">🪣 Limpeza de Fossa</a>
+      <a href="limpeza-de-galerias.html">🌐 Limpeza de Galerias</a>
+      <a href="limpeza-de-caixa-dagua.html">💧 Caixa D'Água</a>
+      <a href="limpeza-de-reservatorio.html">🏗️ Limpeza de Reservatório</a>
+      <a href="dedetizacao.html">🪲 Dedetização</a>
+    </div></div><a href="index.html#sobre" class="nav-link">Sobre</a><a href="index.html#contato" class="nav-link">Contato</a></nav>
+    <a href="https://wa.me/5511987282370?text=Olá!%20Preciso%20de%20desentupimento." target="_blank" class="btn btn-wpp header-cta" id="header-cta"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>WhatsApp</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div></header>
+
+  <!-- PAGE HERO -->
+  <section class="service-page-hero">
+    <div class="container">
+      <div class="service-page-breadcrumb"><a href="index.html">Home</a><span>›</span><span>Desentupimento</span></div>
+      <div class="service-page-hero-inner">
+        <div class="service-page-hero-content">
+          <div class="service-urgency-bar"><span class="urgency-dot"></span>Técnicos disponíveis agora — chegamos em até 40 min</div>
+          <h1>Desentupimento em São Paulo</h1>
+          <p>Resolvemos qualquer tipo de entupimento: esgoto, vaso sanitário, pia, ralo, grelhas e calhas. <strong style="color:#fff">Sem taxa de visita, garantia no serviço.</strong></p>
+          <div class="hero-badges">
+            <div class="trust-badge">✅ Sem taxa de visita</div>
+            <div class="trust-badge">⚡ Chega em até 40min</div>
+            <div class="trust-badge">🔒 Garantia no serviço</div>
+            <div class="trust-badge">📋 Orçamento grátis</div>
+          </div>
+          <div class="service-hero-ctas">
+            <a href="https://wa.me/5511987282370?text=Olá!%20Preciso%20de%20desentupimento.%20Podem%20me%20atender?" target="_blank" class="btn btn-wpp btn-xl pulse" id="service-hero-wpp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Chamar pelo WhatsApp</a>
+            <a href="tel:1123641035" class="btn btn-outline-white btn-xl" id="service-hero-phone">📞 (11) 2364-1035</a>
+          </div>
+        </div>
+        <div class="service-hero-img"><div class="service-hero-img-placeholder"><span>🚿</span><p>Desentupimento Profissional</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE TABS -->
+  <div class="service-tabs">
+    <div class="container">
+      <div class="service-tabs-inner">
+        <button class="tab-btn active" onclick="showTab('esgoto', this)" id="tab-esgoto"><span>🚿</span>Esgoto</button>
+        <button class="tab-btn" onclick="showTab('vaso', this)" id="tab-vaso"><span>🚽</span>Vaso Sanitário</button>
+        <button class="tab-btn" onclick="showTab('pia', this)" id="tab-pia"><span>🍳</span>Pia</button>
+        <button class="tab-btn" onclick="showTab('ralo', this)" id="tab-ralo"><span>🌊</span>Ralo</button>
+        <button class="tab-btn" onclick="showTab('grelhas', this)" id="tab-grelhas"><span>🔲</span>Grelhas</button>
+        <button class="tab-btn" onclick="showTab('calhas', this)" id="tab-calhas"><span>🏠</span>Calhas</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ESGOTO ===== -->
+  <div id="section-esgoto" class="service-section active">
+    <section class="service-page-content"><div class="container"><div class="service-content-grid">
+      <div class="service-main-content">
+        <h2>Desentupimento de Esgoto</h2>
+        <p>A rede de esgoto entupida é um dos problemas mais sérios e urgentes que um imóvel pode ter. Quando o esgoto não escoa, os riscos vão desde mau cheiro até refluxo de dejetos em banheiros e pias. Nossa equipe possui equipamentos de última geração para diagnosticar e resolver qualquer obstrução.</p>
+        <div class="service-features-grid">
+          <div class="service-feature-item"><span class="icon">🔬</span><div><h4>Câmera de Inspeção</h4><p>Localizamos a obstrução com precisão sem abrir paredes.</p></div></div>
+          <div class="service-feature-item"><span class="icon">🌀</span><div><h4>Espiral Elétrica</h4><p>Remove raízes, gordura e objetos sólidos do esgoto.</p></div></div>
+          <div class="service-feature-item"><span class="icon">💧</span><div><h4>Hidrojateamento</h4><p>Alta pressão para limpeza completa da rede de esgoto.</p></div></div>
+          <div class="service-feature-item"><span class="icon">🔒</span><div><h4>Garantia no Serviço</h4><p>Retornamos sem custo se o problema voltar no prazo.</p></div></div>
+        </div>
+        <div class="service-mid-cta">
+          <div class="mc-icon">🚿</div>
+          <div class="mc-text"><strong>Esgoto entupido ou com refluxo?</strong><span>Técnicos chegam em até 40 min com equipamento profissional.</span></div>
+          <a href="https://wa.me/5511987282370?text=Preciso%20de%20desentupimento%20de%20esgoto%20urgente!" target="_blank" class="btn btn-wpp pulse" id="esgoto-mid-cta">Chamar Agora</a>
+        </div>
+        <h3>Sinais de esgoto entupido</h3>
+        <ul style="padding-left:20px;margin-bottom:20px;display:flex;flex-direction:column;gap:8px;">
+          <li style="color:var(--gray-600);font-size:.92rem;">• Vasos, ralos e pias escoam lentamente ao mesmo tempo</li>
+          <li style="color:var(--gray-600);font-size:.92rem;">• Mau cheiro vindo do esgoto dentro de casa</li>
+          <li style="color:var(--gray-600);font-size:.92rem;">• Água ou dejetos voltando pelo ralo ou vaso</li>
+          <li style="color:var(--gray-600);font-size:.92rem;">• Borbulhas nos vasos quando outros canos estão em uso</li>
+        </ul>
+        <div class="service-reviews"><h3>⭐ Avaliações</h3><div class="review-list">
+          <div class="review-item"><div class="review-header"><span class="review-name">Marcos S. — Tatuapé, SP</span><span class="review-stars">★★★★★</span></div><p>"Esgoto estava refluxando no banheiro. Resolveram com câmera de inspeção e espiral em menos de 2 horas. Excelente!"</p><div class="review-source">Google Meu Negócio</div></div>
+          <div class="review-item"><div class="review-header"><span class="review-name">Síndica Renata — Condomínio Ipiranga</span><span class="review-stars">★★★★★</span></div><p>"Desentupimento da coluna de esgoto do prédio. Vieram com câmera, identificaram o problema e resolveram no mesmo dia."</p><div class="review-source">Google Meu Negócio</div></div>
+        </div></div>
+      </div>
+      <aside class="service-sidebar">
+        <div class="sidebar-cta-card"><h3>🚿 Esgoto Entupido?</h3><p>Chegamos em até 40 min. Câmera de inspeção + garantia.</p>
+          <a href="https://wa.me/5511987282370?text=Preciso%20de%20desentupimento%20de%20esgoto." target="_blank" class="btn btn-wpp pulse" id="esgoto-sidebar-wpp">Chamar pelo WhatsApp</a>
+          <div class="sidebar-phones"><a href="tel:1123641035">📞 (11) 2364-1035</a><a href="tel:11987282370">📱 (11) 98728-2370</a></div>
+        </div>
+        <div class="sidebar-trust"><h4>Por que a Solution?</h4><div class="sidebar-trust-items"><div class="sidebar-trust-item">Visita técnica gratuita</div><div class="sidebar-trust-item">Câmera de inspeção inclusa</div><div class="sidebar-trust-item">Técnicos certificados</div><div class="sidebar-trust-item">Garantia formal</div><div class="sidebar-trust-item">Atendimento 24h</div></div></div>
+      </aside>
+    </div></div></section>
+  </div>
+
+  <!-- ===== VASO SANITÁRIO ===== -->
+  <div id="section-vaso" class="service-section">
+    <section class="service-page-content"><div class="container"><div class="service-content-grid">
+      <div class="service-main-content">
+        <h2>Desentupimento de Vaso Sanitário</h2>
+        <p>O vaso entupido paralisa o banheiro e não pode esperar. Nossos técnicos chegam com bomba pneumática, garfo de aço e desentupidor profissional para resolver sem danificar a louça ou o banheiro.</p>
+        <div class="service-features-grid">
+          <div class="service-feature-item"><span class="icon">💨</span><div><h4>Bomba Pneumática</h4><p>Pressão de ar remove obstruções no sifão sem danos à peça.</p></div></div>
+          <div class="service-feature-item"><span class="icon">🔩</span><div><h4>Garfo de Aço</h4><p>Remove objetos sólidos presos com precisão e segurança.</p></div></div>
+          <div class="service-feature-item"><span class="icon">🧼</span><div><h4>Sem Sujeira</h4><p>Serviço limpo, sem transtorno para família ou estabelecimento.</p></div></div>
+          <div class="service-feature-item"><span class="icon">🔒</span><div><h4>Garantia no Serviço</h4><p>Retornamos sem custo se o problema voltar no prazo.</p></div></div>
+        </div>
+        <div class="service-mid-cta">
+          <div class="mc-icon">🚽</div>
+          <div class="mc-text"><strong>Vaso travado? Não force!</strong><span>Forçar pode compactar a obstrução. Chamanos e resolvemos em minutos.</span></div>
+          <a href="https://wa.me/5511987282370?text=Preciso%20de%20desentupimento%20de%20vaso%20sanitário!" target="_blank" class="btn btn-wpp pulse" id="vaso-mid-cta">Chamar Agora</a>
+        </div>
+        <h3>Principais causas do entupimento de vaso</h3>
+        <ul style="padding-left:20px;margin-bottom:20px;display:flex;flex-direction:column;gap:8px;">
+          <li style="color:var(--gray-600);font-size:.92rem;">• Lenços umedecidos, absorventes ou brinquedos jogados no vaso</li>
+          <li style="color:var(--gray-600);font-size:.92rem;">• Excesso de papel higiênico compactado no sifão</li>
+          <li style="color:var(--gray-600);font-size:.92rem;">• Ramal de esgoto entupido causando refluxo no vaso</li>
+          <li style="color:var(--gray-600);font-size:.92rem;">• Objetos caídos acidentalmente</li>
+        </ul>
+        <div class="service-reviews"><h3>⭐ Avaliações</h3><div class="review-list">
+          <div class="review-item"><div class="review-header"><span class="review-name">Fernanda R. — Pinheiros, SP</span><span class="review-stars">★★★★★</span></div><p>"Vaso entupiu num sábado à noite. Em 40 minutos o técnico chegou e resolveu sem sujar nada. Preço justo!"</p><div class="review-source">Google Meu Negócio</div></div>
+          <div class="review-item"><div class="review-header"><span class="review-name">José A. — Brooklin, SP</span><span class="review-stars">★★★★★</span></div><p>"Resolveram sem precisar tirar a louça. Muito profissional e eficiente!"</p><div class="review-source">Google Meu Negócio</div></div>
+        </div></div>
+      </div>
+      <aside class="service-sidebar">
+        <div class="sidebar-cta-card"><h3>🚽 Vaso Entupido?</h3><p>Não espere — chegamos em até 40 minutos, visita gratuita.</p>
+          <a href="https://wa.me/5511987282370?text=Preciso%20de%20desentupimento%20de%20vaso%20sanitário." target="_blank" class="btn btn-wpp pulse" id="vaso-sidebar-wpp">Chamar pelo WhatsApp</a>
+          <div class="sidebar-phones"><a href="tel:1123641035">📞 (11) 2364-1035</a><a href="tel:11987282370">📱 (11) 98728-2370</a></div>
+        </div>
+        <div class="sidebar-trust"><h4>Por que a Solution?</h4><div class="sidebar-trust-items"><div class="sidebar-trust-item">Visita técnica gratuita</div><div class="sidebar-trust-item">Sem danificar a louça</div><div class="sidebar-trust-item">Técnicos certificados</div><div class="sidebar-trust-item">Garantia formal</div><div class="sidebar-trust-item">Atendimento 24h</div></div></div>
+      </aside>
+    </div></div></section>
+  </div>
+
+  <!-- ===== PIA ===== -->
+  <div id="section-pia" class="service-section">
+    <section class="service-page-content"><div class="container"><div class="service-content-grid">
+      <div class="service-main-content">
+        <h2>Desentupimento de Pia</h2>
+        <p>A pia da cozinha e do banheiro são as mais propensas a entupimentos por gordura, cabelos e resíduos. Resolvemos com espiral elétrica e produtos especializados, sem danos à sua bancada ou tubulação.</p>
+        <div class="service-features-grid">
+          <div class="service-feature-item"><span class="icon">⚡</span><div><h4>Espiral Elétrica</h4><p>Remove obstruções no sifão e ramal rapidamente.</p></div></div>
+          <div class="service-feature-item"><span class="icon">💧</span><div><h4>Hidrojateamento</h4><p>Alta pressão para remover gordura aderida nas paredes internas.</p></div></div>
+          <div class="service-feature-item"><span class="icon">🧪</span><div><h4>Produtos Seguros</h4><p>Dissolução química controlada, segura para sua tubulação.</p></div></div>
+          <div class="service-feature-item"><span class="icon">🔒</span><div><h4>Garantia no Serviço</h4><p>Retornamos sem custo se o problema voltar.</p></div></div>
+        </div>
+        <div class="service-mid-cta">
+          <div class="mc-icon">🍳</div>
+          <div class="mc-text"><strong>Pia parada? Seu negócio não pode esperar!</strong><span>Atendemos residências, restaurantes e cozinhas industriais.</span></div>
+          <a href="https://wa.me/5511987282370?text=Minha%20pia%20está%20entupida!%20Precisode%20atendimento%20urgente." target="_blank" class="btn btn-wpp pulse" id="pia-mid-cta">Chamar Agora</a>
+        </div>
+        <div class="service-reviews"><h3>⭐ Avaliações</h3><div class="review-list">
+          <div class="review-item"><div class="review-header"><span class="review-name">Restaurante São Bento — Centro, SP</span><span class="review-stars">★★★★★</span></div><p>"Pia da cozinha entupiu no horário do almoço. Chegaram em 35 min e resolveram sem parar a produção!"</p><div class="review-source">Google Meu Negócio</div></div>
+          <div class="review-item"><div class="review-header"><span class="review-name">Mariana F. — Moema, SP</span><span class="review-stars">★★★★★</span></div><p>"Pia do banheiro entupia há semanas. A Solution resolveu em 20 minutos com equipamento profissional."</p><div class="review-source">Google Meu Negócio</div></div>
+        </div></div>
+      </div>
+      <aside class="service-sidebar">
+        <div class="sidebar-cta-card"><h3>🍳 Pia Entupida?</h3><p>Chegamos em até 40 min. Sem taxa de visita.</p>
+          <a href="https://wa.me/5511987282370?text=Minha%20pia%20está%20entupida." target="_blank" class="btn btn-wpp pulse" id="pia-sidebar-wpp">Chamar pelo WhatsApp</a>
+          <div class="sidebar-phones"><a href="tel:1123641035">📞 (11) 2364-1035</a><a href="tel:11987282370">📱 (11) 98728-2370</a></div>
+        </div>
+        <div class="sidebar-trust"><h4>Por que a Solution?</h4><div class="sidebar-trust-items"><div class="sidebar-trust-item">Visita técnica gratuita</div><div class="sidebar-trust-item">Sem danificar a bancada</div><div class="sidebar-trust-item">Atende 24h, feriados</div><div class="sidebar-trust-item">Garantia formal</div></div></div>
+      </aside>
+    </div></div></section>
+  </div>
+
+  <!-- ===== RALO ===== -->
+  <div id="section-ralo" class="service-section">
+    <section class="service-page-content"><div class="container"><div class="service-content-grid">
+      <div class="service-main-content">
+        <h2>Desentupimento de Ralo</h2>
+        <p>Ralos entupidos em banheiro, lavanderia, área de serviço e garagem são resolvidos de forma rápida e limpa. Analisamos a causa e aplicamos a técnica correta para garantir o escoamento perfeito.</p>
+        <div class="service-features-grid">
+          <div class="service-feature-item"><span class="icon">🌊</span><div><h4>Banheiro e Lavanderia</h4><p>Remoção de cabelos, sabão e resíduos acumulados.</p></div></div>
+          <div class="service-feature-item"><span class="icon">🚗</span><div><h4>Garagem e Área Externa</h4><p>Desobstrução de ralos com terra, folhas e areia.</p></div></div>
+          <div class="service-feature-item"><span class="icon">⚡</span><div><h4>Espiral Profissional</h4><p>Equipamento específico para cada tipo e diâmetro de ralo.</p></div></div>
+          <div class="service-feature-item"><span class="icon">🔒</span><div><h4>Garantia no Serviço</h4><p>Ralo limpo com garantia formal.</p></div></div>
+        </div>
+        <div class="service-mid-cta">
+          <div class="mc-icon">🌊</div>
+          <div class="mc-text"><strong>Ralo acumulando água?</strong><span>Resolvemos qualquer tipo de ralo — banheiro, garagem, área externa.</span></div>
+          <a href="https://wa.me/5511987282370?text=Meu%20ralo%20está%20entupido!%20Preciso%20de%20ajuda." target="_blank" class="btn btn-wpp pulse" id="ralo-mid-cta">Chamar Agora</a>
+        </div>
+        <div class="service-reviews"><h3>⭐ Avaliações</h3><div class="review-list">
+          <div class="review-item"><div class="review-header"><span class="review-name">Ana L. — Santo André, SP</span><span class="review-stars">★★★★★</span></div><p>"Ralo da garagem entupido com terra e folhas. Resolvido de forma rápida e limpa. Preço honesto!"</p><div class="review-source">Google Meu Negócio</div></div>
+          <div class="review-item"><div class="review-header"><span class="review-name">Condomínio Vista Verde</span><span class="review-stars">★★★★★</span></div><p>"Vários ralos do andar entupidos depois da chuva. Equipe resolveu tudo em uma visita só. Ótimo serviço!"</p><div class="review-source">Google Meu Negócio</div></div>
+        </div></div>
+      </div>
+      <aside class="service-sidebar">
+        <div class="sidebar-cta-card"><h3>🌊 Ralo Entupido?</h3><p>Resolvemos rapidamente — visita gratuita e garantia no serviço.</p>
+          <a href="https://wa.me/5511987282370?text=Meu%20ralo%20está%20entupido." target="_blank" class="btn btn-wpp pulse" id="ralo-sidebar-wpp">Chamar pelo WhatsApp</a>
+          <div class="sidebar-phones"><a href="tel:1123641035">📞 (11) 2364-1035</a><a href="tel:11987282370">📱 (11) 98728-2370</a></div>
+        </div>
+        <div class="sidebar-trust"><h4>Por que a Solution?</h4><div class="sidebar-trust-items"><div class="sidebar-trust-item">Visita técnica gratuita</div><div class="sidebar-trust-item">Todos os tipos de ralo</div><div class="sidebar-trust-item">Técnicos certificados</div><div class="sidebar-trust-item">Atendimento 24h</div></div></div>
+      </aside>
+    </div></div></section>
+  </div>
+
+  <!-- ===== GRELHAS ===== -->
+  <div id="section-grelhas" class="service-section">
+    <section class="service-page-content"><div class="container"><div class="service-content-grid">
+      <div class="service-main-content">
+        <h2>Desobstrução de Grelhas</h2>
+        <p>Grelhas obstruídas por folhas, terra, detritos e gordura comprometem o escoamento de água em áreas externas, garagens e pátios. Realizamos a limpeza e desobstrução completa, garantindo o fluxo adequado e prevenindo alagamentos.</p>
+        <div class="service-features-grid">
+          <div class="service-feature-item"><span class="icon">🔲</span><div><h4>Grelhas Externas</h4><p>Garagens, pátios, calçadas e áreas de lazer.</p></div></div>
+          <div class="service-feature-item"><span class="icon">🧹</span><div><h4>Limpeza Completa</h4><p>Removemos detritos, folhas, lama e sedimentos acumulados.</p></div></div>
+          <div class="service-feature-item"><span class="icon">💧</span><div><h4>Lavagem a Pressão</h4><p>Limpeza com água de alta pressão para resultado duradouro.</p></div></div>
+          <div class="service-feature-item"><span class="icon">🔒</span><div><h4>Garantia</h4><p>Grelha desobstruída com fluxo perfeito, garantido.</p></div></div>
+        </div>
+        <div class="service-mid-cta">
+          <div class="mc-icon">🔲</div>
+          <div class="mc-text"><strong>Grelha entupida causando alagamento?</strong><span>Resolvemos antes da próxima chuva.</span></div>
+          <a href="https://wa.me/5511987282370?text=Preciso%20de%20desobstrução%20de%20grelhas." target="_blank" class="btn btn-wpp pulse" id="grelhas-mid-cta">Chamar Agora</a>
+        </div>
+        <h3>Onde atuamos</h3>
+        <div class="segment-cards">
+          <div class="segment-card"><h3>🏠 Residencial</h3><ul><li>Garagens de casas</li><li>Quintais e pátios</li><li>Área de lazer</li></ul></div>
+          <div class="segment-card"><h3>🏢 Comercial</h3><ul><li>Estacionamentos</li><li>Galpões industriais</li><li>Condomínios comerciais</li></ul></div>
+        </div>
+      </div>
+      <aside class="service-sidebar">
+        <div class="sidebar-cta-card"><h3>🔲 Grelha Obstruída?</h3><p>Evite alagamentos — desobstrução rápida e garantida.</p>
+          <a href="https://wa.me/5511987282370?text=Preciso%20de%20desobstrução%20de%20grelhas." target="_blank" class="btn btn-wpp pulse" id="grelhas-sidebar-wpp">Chamar pelo WhatsApp</a>
+          <div class="sidebar-phones"><a href="tel:1123641035">📞 (11) 2364-1035</a><a href="tel:11987282370">📱 (11) 98728-2370</a></div>
+        </div>
+        <div class="sidebar-trust"><h4>Por que a Solution?</h4><div class="sidebar-trust-items"><div class="sidebar-trust-item">Visita técnica gratuita</div><div class="sidebar-trust-item">Lavagem a alta pressão</div><div class="sidebar-trust-item">Atendimento 24h</div><div class="sidebar-trust-item">Garantia formal</div></div></div>
+      </aside>
+    </div></div></section>
+  </div>
+
+  <!-- ===== CALHAS ===== -->
+  <div id="section-calhas" class="service-section">
+    <section class="service-page-content"><div class="container"><div class="service-content-grid">
+      <div class="service-main-content">
+        <h2>Desobstrução de Calhas</h2>
+        <p>Calhas entupidas com folhas, galhos e detritos causam transbordamento de água, infiltrações e danos à estrutura do imóvel. Antes das chuvas, faça a limpeza preventiva e evite prejuízos maiores.</p>
+        <div class="service-features-grid">
+          <div class="service-feature-item"><span class="icon">🏠</span><div><h4>Calhas Residenciais</h4><p>Casas, sobrados e condomínios horizontais.</p></div></div>
+          <div class="service-feature-item"><span class="icon">🏢</span><div><h4>Calhas Comerciais</h4><p>Galpões, fábricas e grandes coberturas.</p></div></div>
+          <div class="service-feature-item"><span class="icon">🧹</span><div><h4>Limpeza Completa</h4><p>Folhas, galhos, ninhos de pássaros e sedimentos.</p></div></div>
+          <div class="service-feature-item"><span class="icon">💧</span><div><h4>Prevenção de Infiltração</h4><p>Evitamos danos à estrutura e às paredes do imóvel.</p></div></div>
+        </div>
+        <div class="service-mid-cta">
+          <div class="mc-icon">🏠</div>
+          <div class="mc-text"><strong>Calha transbordando na chuva?</strong><span>Limpeza preventiva antes das chuvas evita infiltrações e danos estruturais.</span></div>
+          <a href="https://wa.me/5511987282370?text=Preciso%20de%20desobstrução%20de%20calhas." target="_blank" class="btn btn-wpp pulse" id="calhas-mid-cta">Chamar Agora</a>
+        </div>
+        <h3>Riscos de calhas entupidas</h3>
+        <ul style="padding-left:20px;margin-bottom:20px;display:flex;flex-direction:column;gap:8px;">
+          <li style="color:var(--gray-600);font-size:.92rem;">• Infiltrações nas paredes e teto</li>
+          <li style="color:var(--gray-600);font-size:.92rem;">• Acúmulo de água na laje ou estrutura do telhado</li>
+          <li style="color:var(--gray-600);font-size:.92rem;">• Mosquitos se reproduzindo na água parada</li>
+          <li style="color:var(--gray-600);font-size:.92rem;">• Danos à fundação por transbordamento</li>
+        </ul>
+      </div>
+      <aside class="service-sidebar">
+        <div class="sidebar-cta-card"><h3>🏠 Calha Entupida?</h3><p>Limpeza preventiva antes das chuvas — visita gratuita.</p>
+          <a href="https://wa.me/5511987282370?text=Preciso%20de%20limpeza%20de%20calhas." target="_blank" class="btn btn-wpp pulse" id="calhas-sidebar-wpp">Chamar pelo WhatsApp</a>
+          <div class="sidebar-phones"><a href="tel:1123641035">📞 (11) 2364-1035</a><a href="tel:11987282370">📱 (11) 98728-2370</a></div>
+        </div>
+        <div class="sidebar-trust"><h4>Por que a Solution?</h4><div class="sidebar-trust-items"><div class="sidebar-trust-item">Visita técnica gratuita</div><div class="sidebar-trust-item">Evita infiltrações</div><div class="sidebar-trust-item">Atendimento preventivo</div><div class="sidebar-trust-item">Garantia formal</div></div></div>
+      </aside>
+    </div></div></section>
+  </div>
+
+  <!-- FAQ GERAL -->
+  <section class="service-page-content" style="padding-top:0"><div class="container">
+    <div class="service-faq"><h2>Perguntas Frequentes</h2><div class="faq-list">
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Qual o prazo para o técnico chegar? <span class="faq-arrow">▼</span></button><div class="faq-answer">Em São Paulo capital e Grande SP, nosso tempo médio de chegada é de até 40 minutos após o contato. Em casos de emergência, priorizamos o atendimento.</div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Cobram taxa de visita? <span class="faq-arrow">▼</span></button><div class="faq-answer">Não! A visita técnica é gratuita e sem compromisso. Você só paga se aprovar o orçamento e quiser que realizemos o serviço.</div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Atendem 24h mesmo? <span class="faq-arrow">▼</span></button><div class="faq-answer">Sim, atendemos 24 horas por dia, 7 dias por semana, incluindo feriados. Entupimentos não têm horário e nossa equipe está sempre pronta.</div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Quais formas de pagamento? <span class="faq-arrow">▼</span></button><div class="faq-answer">Aceitamos PIX, dinheiro, cartão de débito e crédito. Para contratos de manutenção, oferecemos condições especiais.</div></div>
+    </div></div>
+  </div></section>
+
+  <section class="cta-final"><div class="container"><div class="cta-final-inner"><div class="cta-final-content">
+    <h2>Precisa de desentupimento agora?</h2><p>Equipe 24h em São Paulo e Grande SP. Sem taxa de visita.</p>
+    <div class="cta-final-btns">
+      <a href="https://wa.me/5511987282370?text=Preciso%20de%20desentupimento%20urgente." target="_blank" class="btn btn-wpp btn-xl pulse" id="final-wpp">WhatsApp Agora</a>
+      <a href="tel:1123641035" class="btn btn-white-outline btn-xl" id="final-phone">📞 (11) 2364-1035</a>
+    </div>
+    <div class="cta-address"><small>📍 São Paulo e Grande SP • 24h • Sem taxa de visita</small></div>
+  </div><div class="cta-certifications"><h4>Certificações</h4><div class="cert-list"><div class="cert-badge">CETESB</div><div class="cert-badge">IBAMA</div><div class="cert-badge">ANVISA</div><div class="cert-badge">ABNT</div></div></div></div></div></section>
+
+  <section class="related-services"><div class="container"><div class="section-header"><span class="section-tag">Outros serviços</span><h2 class="section-title">Mais <span class="highlight">Serviços</span></h2></div><div class="related-services-grid">
+    <a href="hidrojateamento.html" class="related-card"><div class="related-card-icon">💧</div><div class="related-card-text"><strong>Hidrojateamento</strong><small>Ver mais →</small></div></a>
+    <a href="limpeza-de-caixa-de-gordura.html" class="related-card"><div class="related-card-icon">🏭</div><div class="related-card-text"><strong>Caixa de Gordura</strong><small>Ver mais →</small></div></a>
+    <a href="limpeza-de-fossa.html" class="related-card"><div class="related-card-icon">🪣</div><div class="related-card-text"><strong>Limpeza de Fossa</strong><small>Ver mais →</small></div></a>
+    <a href="limpeza-de-galerias.html" class="related-card"><div class="related-card-icon">🌐</div><div class="related-card-text"><strong>Limpeza de Galerias</strong><small>Ver mais →</small></div></a>
+    <a href="limpeza-de-caixa-dagua.html" class="related-card"><div class="related-card-icon">💧</div><div class="related-card-text"><strong>Caixa D'Água</strong><small>Ver mais →</small></div></a>
+    <a href="dedetizacao.html" class="related-card"><div class="related-card-icon">🪲</div><div class="related-card-text"><strong>Dedetização</strong><small>Ver mais →</small></div></a>
+  </div></div></section>
+
+  <footer class="footer"><div class="container"><div class="footer-grid">
+    <div class="footer-brand"><a href="index.html" class="logo logo-white"><img src="logo/logo.png" alt="Solution Desentupidora e Detetizadora" /></a><p>Especialistas em desentupimento e dedetização em São Paulo. 24h.</p></div>
+    <div class="footer-links"><h4>Serviços</h4><ul><li><a href="desentupimento.html">Desentupimento</a></li><li><a href="hidrojateamento.html">Hidrojateamento</a></li><li><a href="limpeza-de-caixa-de-gordura.html">Caixa de Gordura</a></li><li><a href="limpeza-de-fossa.html">Limpeza de Fossa</a></li><li><a href="limpeza-de-galerias.html">Limpeza de Galerias</a></li><li><a href="limpeza-de-caixa-dagua.html">Caixa D'Água</a></li><li><a href="limpeza-de-reservatorio.html">Reservatório</a></li><li><a href="dedetizacao.html">Dedetização</a></li></ul></div>
+    <div class="footer-links"><h4>Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="index.html#sobre">Sobre</a></li><li><a href="index.html#areas">Áreas</a></li></ul></div>
+    <div class="footer-contact"><h4>Contato</h4><ul><li><a href="tel:1123641035">📞 (11) 2364-1035</a></li><li><a href="tel:11987282370">📱 (11) 98728-2370</a></li><li><a href="https://wa.me/5511987282370" target="_blank">💬 WhatsApp</a></li></ul></div>
+  </div><div class="footer-bottom"><p>© 2024 Solution Desentupidora — Todos os direitos reservados</p></div></div></footer>
+
+  <a href="https://wa.me/5511987282370?text=Preciso%20de%20desentupimento." target="_blank" class="floating-wpp" id="floating-wpp"><svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span class="floating-wpp-label">Fale Agora</span></a>
+
+  <script>
+    function showTab(id, btn) {
+      document.querySelectorAll('.service-section').forEach(s => s.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('section-' + id).classList.add('active');
+      btn.classList.add('active');
+      document.querySelector('.service-tabs').scrollIntoView({ behavior:'smooth', block:'nearest' });
+    }
+    function toggleFaq(btn){const item=btn.closest('.faq-item');const isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(el=>el.classList.remove('open'));if(!isOpen)item.classList.add('open');}
+
+    // Open tab from URL hash
+    const hash = window.location.hash.replace('#','');
+    if(hash && document.getElementById('section-'+hash)){
+      document.querySelectorAll('.service-section').forEach(s=>s.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+      document.getElementById('section-'+hash).classList.add('active');
+      const btn = document.getElementById('tab-'+hash);
+      if(btn) btn.classList.add('active');
+    }
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
