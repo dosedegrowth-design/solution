@@ -136,6 +136,105 @@ if (statNumbers.length) {
 }
 
 /* =====================
+   SERVICES CAROUSEL
+   ===================== */
+(function() {
+  const grid = document.querySelector('.services-grid');
+  const prevBtn = document.querySelector('.services-prev');
+  const nextBtn = document.querySelector('.services-next');
+  const dotsWrap = document.querySelector('.services-dots');
+  if (!grid || !prevBtn || !nextBtn || !dotsWrap) return;
+
+  const cards = grid.querySelectorAll('.service-card');
+  if (!cards.length) return;
+
+  function getVisibleCount() {
+    const w = window.innerWidth;
+    if (w <= 480) return 1;
+    if (w <= 768) return 2;
+    if (w <= 1024) return 3;
+    return 4;
+  }
+
+  function getCardWidth() {
+    const card = cards[0];
+    const style = getComputedStyle(grid);
+    const gap = parseInt(style.gap) || 20;
+    return card.offsetWidth + gap;
+  }
+
+  function getTotalPages() {
+    return Math.max(1, Math.ceil(cards.length / getVisibleCount()));
+  }
+
+  function getCurrentPage() {
+    const cardW = getCardWidth();
+    const visible = getVisibleCount();
+    return Math.round(grid.scrollLeft / (cardW * visible));
+  }
+
+  function scrollToPage(page) {
+    const cardW = getCardWidth();
+    const visible = getVisibleCount();
+    const maxScroll = grid.scrollWidth - grid.clientWidth;
+    const target = Math.min(page * cardW * visible, maxScroll);
+    grid.scrollTo({ left: target, behavior: 'smooth' });
+  }
+
+  // Build dots
+  function buildDots() {
+    const total = getTotalPages();
+    dotsWrap.innerHTML = '';
+    for (let i = 0; i < total; i++) {
+      const dot = document.createElement('button');
+      dot.className = 'services-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', 'Página ' + (i + 1));
+      dot.addEventListener('click', () => scrollToPage(i));
+      dotsWrap.appendChild(dot);
+    }
+  }
+
+  function updateDots() {
+    const current = getCurrentPage();
+    dotsWrap.querySelectorAll('.services-dot').forEach((dot, i) => {
+      dot.classList.toggle('active', i === current);
+    });
+  }
+
+  prevBtn.addEventListener('click', () => {
+    const current = getCurrentPage();
+    scrollToPage(Math.max(0, current - 1));
+  });
+
+  nextBtn.addEventListener('click', () => {
+    const current = getCurrentPage();
+    scrollToPage(Math.min(getTotalPages() - 1, current + 1));
+  });
+
+  grid.addEventListener('scroll', updateDots);
+  window.addEventListener('resize', () => { buildDots(); updateDots(); });
+
+  buildDots();
+
+  // Autoplay
+  let autoInterval = setInterval(() => {
+    const current = getCurrentPage();
+    const total = getTotalPages();
+    scrollToPage(current + 1 >= total ? 0 : current + 1);
+  }, 5000);
+
+  grid.addEventListener('mouseenter', () => clearInterval(autoInterval));
+  grid.addEventListener('touchstart', () => clearInterval(autoInterval), { passive: true });
+  grid.addEventListener('mouseleave', () => {
+    autoInterval = setInterval(() => {
+      const current = getCurrentPage();
+      const total = getTotalPages();
+      scrollToPage(current + 1 >= total ? 0 : current + 1);
+    }, 5000);
+  });
+})();
+
+/* =====================
    FORM SUBMIT → WPP
    ===================== */
 function handleFormSubmit(e) {
