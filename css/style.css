@@ -7,17 +7,12 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  overflow-x: hidden;
-  width: 100%;
 }
 body {
   font-family: 'Inter', sans-serif;
   color: #1a1a2e;
   background: #fff;
   line-height: 1.6;
-  overflow-x: hidden;
-  width: 100%;
-  max-width: 100vw;
 }
 a { text-decoration: none; color: inherit; }
 img { max-width: 100%; height: auto; display: block; }
@@ -1250,11 +1245,12 @@ ul { list-style: none; }
 
 @media (max-width: 768px) {
   /* GLOBAL MOBILE OVERFLOW FIX */
+  html, body { overflow-x: hidden; width: 100%; max-width: 100vw; }
   .btn { white-space: normal; word-break: break-word; }
   .hero-bg, .hero::before, .hero::after, .cta-final::before { display: none !important; }
   .topbar, .hero, .stats-bar, .emergency-strip, .services,
   .how-works, .why-us, .testimonials, .areas, .cta-final, .footer,
-  .service-page-hero, .service-page-content, .related-services { overflow-x: clip; }
+  .service-page-hero, .related-services { overflow-x: clip; }
 
   /* NAV MOBILE — hide original nav, show hamburger */
   .topbar-left { display: none; }
